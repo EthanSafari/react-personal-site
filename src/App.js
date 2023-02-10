@@ -1,6 +1,13 @@
+import { Route, Switch } from "react-router-dom";
+import Landing from "./components/Landing";
+
 function App() {
   return (
-    <h1>Hello from App</h1>
+    <>
+      <Switch>
+        <Route exact path={['/']} component={Landing} />
+      </Switch>
+    </>
   );
 }
 
