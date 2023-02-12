@@ -1,14 +1,14 @@
 import { Route, Switch } from "react-router-dom";
-import Landing from "./components/Landing";
+import Album from "./components/Album";
 
 function App() {
   return (
     <>
       <Switch>
-        <Route exact path={['/']} component={Landing} />
+        <Route path={['/']} component={Album} />
       </Switch>
     </>
   );
-}
+};
 
 export default App;
