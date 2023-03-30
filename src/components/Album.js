@@ -22,6 +22,8 @@ import DithcordImage from '../images/dithcord.png';
 import BibliothecaImage from '../images/bibliotheca.png';
 import ProfileImage from '../images/profile_image.jpg';
 
+import Resume from '../documents/Resume.docx.pdf';
+
 import ProjectCard from './ProjectCard';
 
 const person = {
@@ -31,6 +33,7 @@ const person = {
   github: 'https://github.com/EthanSafari',
   email: 'ethansauri@outlook.com',
   personImage: ProfileImage,
+  resume: Resume,
 };
 
 const cards = [1, 2, 3];
@@ -72,7 +75,7 @@ export default function AboutMe() {
         <Toolbar
         sx={{display:'flex', justifyContent:'space-between'}}>
           <Typography variant="h5" color="inherit" noWrap>
-            A Personal Look at {person.firstName} {person.lastName}
+            1 (727) 238-9292
           </Typography>
           <Typography variant="h5" color="inherit" noWrap>
             {person.email}
@@ -133,6 +136,7 @@ export default function AboutMe() {
               >
                 <Button variant="contained"><Link href={person.linkedin} color="inherit">Linkedin</Link></Button>
                 <Button variant="contained"><Link href={person.github} color="inherit">Github</Link></Button>
+                <Button variant="contained"><Link href={person.resume} color="inherit" download>Resume</Link></Button>
               </Stack>
             </Container>
         </Box>
