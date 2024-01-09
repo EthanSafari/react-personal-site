@@ -22,7 +22,7 @@ import DithcordImage from '../images/dithcord.png';
 import BibliothecaImage from '../images/bibliotheca.png';
 import ProfileImage from '../images/profile_image.jpg';
 
-import Resume from '../documents/resume.pdf';
+import Resume from '../documents/Black_White_Minimalist_CV_Resume-16.pdf';
 
 import ProjectCard from './ProjectCard';
 
